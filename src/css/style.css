@@ -1,0 +1,137 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background: #344051;
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+    line-height: 60px;
+    padding-left: 388px;
+    float: left;
+}
+
+.menu {
+    float: left;
+    padding-left: 432px;
+}
+
+.menu li {
+    float: left;
+    line-height: 60px;
+    color: #fff;
+    margin-right: 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.main{
+    width: 100%;
+    height: calc(100% - 60px);
+    background: url(../img/boy.png) 90% 100%/auto 85% no-repeat,url(../img/%D1%84%D0%BE%D0%BD.jpg) center/cover no-repeat;
+}
+
+.title_container{
+    float: left;
+    margin: 432px 0px 0px 404px;
+    color: #2c384a;
+    text-align: center;
+}
+
+.title_container h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.title_container h4{
+    margin-top: 40px;
+    font-size: 22px;
+    color: #79818d;
+}
+
+.title_container input{
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 13px;
+    padding: 0px 16px;
+    margin: 50px 14px 0px 14px
+}
+
+.forme {
+    text-align: center;
+    width: 100%;
+    height: 2403px;
+}
+
+.Ican {
+    text-align: center;
+    background: url(../img/fon2.png)center/cover no-repeat;
+    width: 100%;
+    height: 1753px;
+}
+
+.Ican div {
+    float: left;
+    width: 25%;
+}
+
+.kejs {
+    text-align: center;
+    width: 100%;
+    height: 3703px;
+}
+
+.calc {
+    text-align: center;
+    width: 100%;
+    height: 3000px;
+}
+
+.statistic {;
+    background: url(../img/fon3.png)center/cover no-repeat;
+    text-align: center;
+    width: 100%;
+    height: 1673px;
+}
+
+.statistic div {
+    float: left;
+    width: 25%;
+}
+
+.koment {
+    text-align: center;
+    width: 100%;
+    height: 1970px;
+}
+
+.kontakt {
+    background: url(../img/%D0%A4%D0%BE%D0%BD.png)center/cover no-repeat;
+    text-align: center;
+    width: 100%;
+    height: 2700px;
+}
+
+.dan {
+    float: left;
+    width: 33%;
+}
+
+.email {
+    float: left;
+    width: 100px;
+    text-align: center;
+}
+
+.contact {
+    width: 100px;
+}
