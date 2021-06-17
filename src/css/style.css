@@ -129,6 +129,10 @@ h2 {
     color: #cf7600;
 }
 
+.info img {
+    padding: 0px 100px 100px 100px;
+}
+
 .kejs {
     text-align: center;
     width: 100%;
@@ -138,20 +142,27 @@ h2 {
 }
 
 .kk{
-    padding: 50px 800px 0px 0px;
+    padding: 50px 0px 0px 0px;
+    float: left;
+    width: 100%;
 }
 
 .kejs div {
     float: left;
+    padding: 0px 40px 0px 0px;
+}
+
+.kejs p {
+    font-size: 20px;
 }
 
 .kejs .np {
     text-align: left;
-    width: 65%;
+    width: 70%;
 }
 
 .kejs h3 {
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .kejs input {
@@ -167,6 +178,14 @@ h2 {
     text-transform: uppercase;
 }
 
+.kejs .np p {
+    font-size: 30px;
+}
+
+.kejs .ss p {
+    font-size: 20px;
+}
+
 .calc {
     text-align: center;
     width: 100%;
@@ -178,12 +197,23 @@ h2 {
 .calc h3 {
     text-align: left;
     font-size: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .calc select {
-    border: 2px solid #6d7682;
+    border: 2px round #6d7682;
     text-align: left;
-    width: 100px;
+    width: 100%;
+    font-size: 20px;
+    background: #eee;
+    padding: 10px;
+}
+
+.calc .p {
+    padding: 50px;
+    text-align: left;
     font-size: 20px;
 }
 
@@ -200,6 +230,8 @@ h2 {
     float: left;
     width: 25%;
     padding: 130px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .koment {
@@ -218,6 +250,12 @@ h2 {
     height: 2700px;
     color: white;
     padding: 363px;
+    font-size: 20px;
+}
+
+.kontakt .email {
+    width: 100%;
+    font-size: 20px;
 }
 
 .dan {
