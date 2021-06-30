@@ -1,5 +1,19 @@
 body {
     font-family: Arial, sans-serif;
+    opacity: 0;
+    -webkit-animation: start 3s forwards;
+    -o-animation: start 3s forwards;
+    animation: start 3s forwards;
+}
+
+@keyframes start {
+    0%{
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+    }
 }
 
 nav {
@@ -15,6 +29,24 @@ nav {
     line-height: 60px;
     padding-left: 388px;
     float: left;
+    -webkit-animation: com 2s;
+    -o-animation: com 2s;
+    animation: com 2s;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes com {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .menu {
@@ -29,15 +61,66 @@ nav {
     margin-right: 40px;
     font-size: 16px;
     text-transform: uppercase;
+    -webkit-animation: stw 0.4s ease forwards;
+    -moz-animation: stw 0.4s ease forwards;
+    animation: stw 0.4s ease forwards;
+    opacity: 0;
 }
 
-.menu a {
+@keyframes stw {
+    from {
+        opacity: 0;
+        margin-top: -80px;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+.menu li:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.menu li:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+.menu li:nth-child(4) {
+    animation-delay: 1.2s;
+}
+
+.menu li:nth-child(5) {
+    animation-delay: 1.6s;
+}
+
+.menu li:nth-child(6) {
+    animation-delay: 2s;
+}
+
+.menu li a {
+    transition: all 0.1s;
     color: white;
+    transform: scale(1);
+    display: inline-block;
+}
+
+.menu li a:visited {
+    color: white;
+}
+
+.menu li a:hover {
+    color: #e88604;
+}
+
+.menu li a:active {
+    transform: scale(1.1);
 }
 
 .main {
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
     background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/%D1%84%D0%BE%D0%BD.jpg) center/cover no-repeat;
 }
 
@@ -46,6 +129,13 @@ nav {
     margin: 432px 0px 0px 404px;
     color: #2c384a;
     text-align: center;
+    opacity: 0;
+    -webkit-animation: qwq 1s ease forwards;
+    -o-animation: qwq 1s ease forwards;
+    animation: qwq 1s ease forwards;
+    -webkit-animation-delay: 2.4s;
+    -o-animation-delay: 2.4s;
+    animation-delay: 2.4s;
 }
 
 .title_container h1 {
@@ -69,30 +159,54 @@ nav {
     font-size: 13px;
     padding: 0px 16px;
     margin: 50px 14px 0px 14px;
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.title_container input:hover {
+    background: #344051;
+    color: white;
+}
+
+.title_container input:active {
+    transform: scale(1.1);
+}
+
+@keyframes qwq {
+    from {
+        opacity: 0;
+        margin-left: -1000px;
+    }
+
+    to {
+        opacity: 1;
+        margin-left: 404px;
+    }
 }
 
 .forme {
     text-align: center;
     width: 100%;
-    height: 1500px;
+    height: 100%;
     float: left;
-    padding: 200px;
+    padding: 50px;
 }
 
 .img1 {
     padding: 50px;
-    width: 200px;
+    width: 190px;
 }
 
 .forme .img2 {
-    padding: 100px;
-    height: 450px;
+    padding: 50px;
+    height: 350px;
 }
 
 .forme p {
     text-align: left;
     font-size: 25px;
-    padding: 20px;
+    padding: 20px 0px 0px 300px;
+    width: 80%;
 }
 
 .forme input {
@@ -105,10 +219,21 @@ nav {
     font-size: 20px;
     padding: 0px 16px;
     margin: 50px 14px 0px 14px;
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.forme input:hover {
+    background: #344051;
+    color: white;
+}
+
+.forme input:active {
+    transform: scale(1.1);
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
     text-align: center;
 }
@@ -118,7 +243,7 @@ h2 {
     float: left;
     background: url(../img/fon2.png)center/cover no-repeat;
     width: 100%;
-    height: 1000px;
+    height: 100%;
     padding: 200px;
 }
 
@@ -127,9 +252,10 @@ h2 {
     width: 25%;
     padding: 100px;
     height: 200px;
+    display: inline-block;
 }
 
-.Ican .pr p{
+.Ican .pr p {
     font-size: 19px;
     width: 300px;
     padding: 10px;
@@ -152,19 +278,20 @@ h2 {
 .kejs {
     text-align: center;
     width: 100%;
-    height: 1500px;
-    padding: 300px;
+    height: 150%;
+    padding: 100px;
     float: left;
 }
 
 .kejs .kk {
     padding: 50px;
-    
+    margin-left: 250px;
 }
 
 .kejs div {
     float: left;
     padding: 0px 40px 0px 0px;
+    margin-left: 100px;
 }
 
 .kejs p {
@@ -191,6 +318,8 @@ h2 {
     padding: 0px 16px;
     margin: 50px 14px 0px 14px;
     text-transform: uppercase;
+    transition: all 0.2s;
+    transform: scale(1);
 }
 
 .kejs .np p {
@@ -201,12 +330,22 @@ h2 {
     font-size: 20px;
 }
 
+.ss input:hover {
+    background: #344051;
+    color: white;
+}
+
+.ss input:active {
+    transform: scale(1.1);
+}
+
 .calc {
     text-align: center;
     width: 100%;
-    height: 1000px;
+    height: 100%;
     padding: 200px;
     float: left;
+    border: solid;
 }
 
 .calc h3 {
@@ -237,36 +376,38 @@ h2 {
     background: url(../img/fon3.png)center/cover no-repeat;
     text-align: center;
     width: 100%;
-    height: 900px;
+    height: 75%;
     padding: 200px;
 }
 
 .statistic .st {
     float: left;
     width: 25%;
-    padding: 130px;
+    padding: 50px;
     font-size: 20px;
     font-weight: bold;
+    display: inline-block;
 }
 
-.statistic .st p{
+.statistic .st p {
     font-size: 40px;
     font-weight: bold;
+    padding: 10px;
 }
 
-.statistic .st h5{
+.statistic .st h5 {
     font-size: 20px;
-    text-align: left;
+    text-align: center;
     white-space: nowrap;
-    margin-right: 40px;
+    padding: 5px;
 }
 
 .koment {
     float: left;
     text-align: center;
     width: 100%;
-    height: 900px;
-    padding: 150px;
+    height: 75%;
+    padding: 50px;
 }
 
 .koment p {
@@ -284,9 +425,9 @@ h2 {
     background: url(../img/%D0%A4%D0%BE%D0%BD.png)center/cover no-repeat;
     text-align: center;
     width: 100%;
-    height: 1200px;
+    height: 100%;
     color: white;
-    padding: 100px;
+    padding: 50px;
     font-size: 20px;
 }
 
@@ -298,7 +439,8 @@ h2 {
 .dan {
     float: left;
     width: 33%;
-    padding: 50px;
+    padding: 20px;
+    display: inline-block;
 }
 
 .dan p {
@@ -313,24 +455,24 @@ h2 {
 .email {
     float: left;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     font-size: 20px;
 }
 
-.email .emm1{
+.email .emm1 {
     width: 45%;
     float: left;
     padding: 10px 10px 10px 10px;
     margin: 10px 10px 10px 10px;
-    
+
 }
 
-.email .emm2{
+.email .emm2 {
     width: 45%;
     float: right;
     padding: 10px 10px 10px 10px;
     margin: 10px 10px 10px 10px;
-    
+
 }
 
 .email .ms {
@@ -348,6 +490,18 @@ h2 {
     font-size: 20px;
     padding: 0px 20px;
     margin: 50px 14px 0px 14px;
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.email .but:hover {
+    background: white;
+    color: black;
+    border: 3px solid black;
+}
+
+.email .but:active {
+    transform: scale(1.1);
 }
 
 .contact {
