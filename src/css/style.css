@@ -1,19 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    opacity: 0;
-    -webkit-animation: start 3s forwards;
-    -o-animation: start 3s forwards;
-    animation: start 3s forwards;
-}
-
-@keyframes start {
-    0%{
-        opacity: 0;
-    }
-    
-    100%{
-        opacity: 1;
-    }
 }
 
 nav {
@@ -190,12 +176,16 @@ main {
     height: 100%;
     float: left;
     padding: 50px;
+    -webkit-animation: com 5s;
+    -o-animation: com 5s;
+    animation: com 5s;
 }
 
 .img1 {
     padding: 50px;
     width: 190px;
 }
+
 
 .forme .img2 {
     padding: 50px;
@@ -233,7 +223,7 @@ main {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
     text-align: center;
 }
@@ -245,6 +235,9 @@ h2 {
     width: 100%;
     height: 100%;
     padding: 200px;
+    -webkit-animation: com 5s;
+    -o-animation: com 5s;
+    animation: com 5s;
 }
 
 .Ican .pr {
@@ -281,6 +274,9 @@ h2 {
     height: 150%;
     padding: 100px;
     float: left;
+    -webkit-animation: com 5s;
+    -o-animation: com 5s;
+    animation: com 5s;
 }
 
 .kejs .kk {
@@ -346,6 +342,10 @@ h2 {
     padding: 200px;
     float: left;
     border: solid;
+    border: 2px round #6d7682;
+    -webkit-animation: com 5s;
+    -o-animation: com 5s;
+    animation: com 5s;
 }
 
 .calc h3 {
@@ -357,17 +357,32 @@ h2 {
 }
 
 .calc select {
-    border: 2px round #6d7682;
     text-align: left;
     width: 100%;
     font-size: 20px;
     background: #eee;
     padding: 10px;
+    transition: all 0.2s;
+}
+
+.calc select:hover {
+    background: #344051;
+    color: white;
 }
 
 .calc .p {
+    float: left;
     padding: 50px;
     text-align: left;
+    font-size: 20px;
+    width: 30%;
+}
+
+.calc .k {
+    width: 30%;
+    float: right;
+    padding: 50px;
+    text-align: right;
     font-size: 20px;
 }
 
@@ -378,6 +393,9 @@ h2 {
     width: 100%;
     height: 75%;
     padding: 200px;
+    -webkit-animation: com 5s;
+    -o-animation: com 5s;
+    animation: com 5s;
 }
 
 .statistic .st {
@@ -408,6 +426,9 @@ h2 {
     width: 100%;
     height: 75%;
     padding: 50px;
+    -webkit-animation: com 5s;
+    -o-animation: com 5s;
+    animation: com 5s;
 }
 
 .koment p {
@@ -429,6 +450,9 @@ h2 {
     color: white;
     padding: 50px;
     font-size: 20px;
+    -webkit-animation: com 5s;
+    -o-animation: com 5s;
+    animation: com 5s;
 }
 
 .kontakt .email {
@@ -457,6 +481,9 @@ h2 {
     text-align: center;
     padding: 10px;
     font-size: 20px;
+    -webkit-animation: com 5s;
+    -o-animation: com 5s;
+    animation: com 5s;
 }
 
 .email .emm1 {
@@ -508,13 +535,16 @@ h2 {
     width: 100px;
 }
 
-footer {
+.footer {
     width: 100%;
     height: 60px;
     background: #344051;
+    -webkit-animation: com 5s;
+    -o-animation: com 5s;
+    animation: com 5s;
 }
 
-footer p {
+.footer p {
     color: white;
     font-size: 28px;
     line-height: 60px;
