@@ -12,9 +12,11 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body onload="myFunction()">
 
-    <header>
+    <div id="loader"></div>
+
+    <header class="animate-bottom" id="myDiv1">
         <nav>
             <div class="logo">Никита Соколов</div>
             <div class="menu">
@@ -30,7 +32,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="animate-bottom" id="myDiv2">
 
         <section class="main">
             <div class="title_container">
@@ -137,8 +139,6 @@
             </div>
         </section>
 
-
-
         <section class="statistic" id="stat">
             <h2>НЕМНОГО САТТИСТИКИ</h2>
             <img class="img1" src="img/cherta.png" alt="cherta">
@@ -166,8 +166,6 @@
             </div>
         </section>
 
-
-
         <section class="koment" id="kom">
             <h2>ОТЗЫВЫ</h2>
             <img class="img1" src="img/cherta.png" alt="cherta">
@@ -179,7 +177,6 @@
                 <b>Михаил</b>, Ген директор ПАО “Газпром”.
             </h3>
         </section>
-
 
         <section class="kontakt" id="kon">
             <h2>МОИ КОНТАКТЫ</h2>
@@ -228,6 +225,21 @@
         </section>
 
     </main>
+    
+    <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv1,").style.display = "block";
+            document.getElementById("myDiv2").style.display = "block";
+        }
+
+    </script><!-- взято с https://html5css.ru/howto/howto_css_loader.php -->
 
 </body>
 
