@@ -9,6 +9,7 @@
     <meta property="og:title" content="Моя страница">
     <title>Никита Соколов</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -18,214 +19,463 @@
 
     <header class="animate-bottom" id="myDiv1">
         <nav>
-            <div class="logo">Никита Соколов</div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">Обо мне</a></li>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Кейсы</a></li>
-                    <li><a href="#">Прайс</a></li>
-                    <li><a href="#">Отзывы</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-2 col-xl-3 col-lg-3 col-7">
+                        <div class="logo">Никита Соколов</div>
+                    </div>
+                    <div class="col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
+                        <div class="menu">
+                            <ul>
+                                <li><a href="#">Обо мне</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#">Кейсы</a></li>
+                                <li><a href="#">Прайс</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+                        <div class="dropdown">
+                            <a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                Навигация
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">Обо мне</a></li>
+                                <li><a class="dropdown-item" href="#">Услуги</a></li>
+                                <li><a class="dropdown-item" href="#">Кейсы</a></li>
+                                <li><a class="dropdown-item" href="#">Прайс</a></li>
+                                <li><a class="dropdown-item" href="#">Отзывы</a></li>
+                                <li><a class="dropdown-item" href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </nav>
     </header>
 
     <main class="animate-bottom" id="myDiv2">
 
         <section class="main">
-            <div class="title_container">
-                <h1>Привет<br>я Никита Соколов</h1>
-                <h4>Фулл стек веб-разработчик</h4>
-                <input type="button" value="Обо мне">
-                <input type="button" value="Мои роботы">
+            <div class="container h-100">
+                <div class="row align-items-center h-100">
+                    <div class="col-lg-6 mt-5 pt-5">
+                        <div class="title_container mt-5">
+                            <h1>Привет<br>Я Никита Соколов</h1>
+                            <h4>Фулл стек веб-разработчик</h4>
+                            <input type="button" value="Обо мне">
+                            <input type="button" value="Мои роботы">
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </section>
 
         <section class="forme" id="for_me">
-            <h2>ОБО МНЕ</h2>
-            <img class="img1" src="img/cherta.png" alt="cherta">
-            <br>
-            <img class="img2" src="img/fotka.png" alt="foto">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam non maiores ad, quibusdam amet adipisci possimus illo odio dolorem aspernatur maxime, nihil fuga obcaecati nisi expedita voluptates praesentium tenetur error.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptatum molestias laborum dignissimos voluptate, eius aut voluptates excepturi, illo ipsum exercitationem quo minima dolor, delectus atque consequatur at omnis ullam.</p>
-            <input type="button" value="Скачать резюме">
+            <div class="container h-100">
+                <div class="row align-items-center w-100">
+                    <div class="text-center">
+                        <h2>ОБО МНЕ</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="text-center"><img class="img1 mx-auto d-block" src="img/cherta.png" alt="cherta"></div>
+                </div>
+                <div class="row">
+                    <div class="text-center"><img class="img2 mx-auto d-block" src="img/fotka.png" alt="foto"></div>
+                </div>
+                <div class="row w-100 pt-5">
+                    <div class="col-xxl-8 col-xl-8 offset-xxl-2 offset-xl-2 col-lg-8 offset-lg-2 d-none d-md-block">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam non maiores ad, quibusdam amet adipisci possimus illo odio dolorem aspernatur maxime, nihil fuga obcaecati nisi expedita voluptates praesentium tenetur error.</p>
+                    </div>
+                    <div class="w-100 d-none d-md-block"></div>
+                    <div class="col d-flex d-md-none">
+                        <p>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Содержание 1
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapseExample6">
+                            <div class="card card-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam non maiores ad, quibusdam amet adipisci possimus illo odio dolorem aspernatur maxime, nihil fuga obcaecati nisi expedita voluptates praesentium tenetur error.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row w-100">
+                    <div class="col-xxl-8 col-xl-8 offset-xxl-2 offset-xl-2 col-lg-8 offset-lg-2 d-none d-md-block">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptatum molestias laborum dignissimos voluptate, eius aut voluptates excepturi, illo ipsum exercitationem quo minima dolor, delectus atque consequatur at omnis ullam.</p>
+                    </div>
+                    <div class="w-100 d-none d-md-block"></div>
+                    <div class="col d-flex d-md-none">
+                        <p>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Содержание 2
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapseExample5">
+                            <div class="card card-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptatum molestias laborum dignissimos voluptate, eius aut voluptates excepturi, illo ipsum exercitationem quo minima dolor, delectus atque consequatur at omnis ullam.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center w-100">
+                    <div class="col-xxl-2 offset-xxl-5 col-xl-2 offset-xl-5"><input type="button" value="Скачать резюме"></div>
+                </div>
+            </div>
         </section>
 
         <section class="Ican" id="i_can">
-            <h2>ЧТО Я УМЕЮ</h2>
-            <img class="img1" src="img/cherta.png" alt="cherta">
-            <div>
-                <div class="pr">
-                    <img src="img/%D0%BD%D0%BE%D1%83%D1%82.png" alt="Иконка">
-                    <h4>Веб-дизайн</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic eveniet modi ullam itaque dicta vero ad nostrum ipsum architecto!</p>
+            <div class="container h-100">
+                <div class="row align-items-center w-100">
+                    <div class="text-center">
+                        <h2>ЧТО Я УМЕЮ</h2>
+                    </div>
                 </div>
-                <div class="pr">
-                    <img src="img/%D0%B7%D0%BD%D0%B0%D0%BA.png" alt="Иконка">
-                    <h4>Разработка</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil distinctio voluptatem molestias corporis maiores. Inventore.</p>
+                <div class="row">
+                    <div class="text-center"><img class="img1 mx-auto d-block" src="img/cherta.png" alt="cherta"></div>
                 </div>
-                <div class="pr">
-                    <img src="img/%D1%80%D0%B0%D0%BA%D0%B5%D1%82%D0%B0.png" alt="Иконка">
-                    <h4>СЕО-Оптимизация</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos soluta voluptatibus, accusamus similique ex, tempore porro voluptates.</p>
-                </div>
-                <div class="pr">
-                    <img src="img/%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BE%D1%84%D0%BE%D0%BD.png" alt="Иконка">
-                    <h4>Маркетинг</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus sequi voluptate, dignissimos accusamus fugiat sint, obcaecati eligendi dolore cupiditate amet saepe.</p>
+                <div class="row justify-content-start">
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 d-none d-lg-block">
+                        <div class="pr">
+                            <img src="img/%D0%BD%D0%BE%D1%83%D1%82.png" alt="Иконка">
+                            <h4>Веб-дизайн</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic eveniet modi ullam itaque dicta vero ad nostrum ipsum architecto!</p>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 d-none d-lg-block">
+                        <div class="pr">
+                            <img src="img/%D0%B7%D0%BD%D0%B0%D0%BA.png" alt="Иконка">
+                            <h4>Разработка</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil distinctio voluptatem molestias corporis maiores. Inventore.</p>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 d-none d-lg-block">
+                        <div class="pr">
+                            <img src="img/%D1%80%D0%B0%D0%BA%D0%B5%D1%82%D0%B0.png" alt="Иконка">
+                            <h4>СЕО-Оптимизация</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos soluta voluptatibus, accusamus similique ex, tempore porro voluptates.</p>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 d-none d-lg-block">
+                        <div class="pr">
+                            <img src="img/%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BE%D1%84%D0%BE%D0%BD.png" alt="Иконка">
+                            <h4>Маркетинг</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus sequi voluptate, dignissimos accusamus fugiat sint, obcaecati eligendi dolore cupiditate amet saepe.</p>
+                        </div>
+                    </div>
+                    <div class="row d-flex d-lg-none">
+                        <div class="col"><a class="btn btn-outline-secondary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><img src="img/%D0%BD%D0%BE%D1%83%D1%82.png" alt="Иконка">Веб-дизайн</a></div>
+                        <div class="col"><button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2"><img src="img/%D0%B7%D0%BD%D0%B0%D0%BA.png" alt="Иконка">
+                                Разработка</button></div>
+                        <div class="col"><button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3"><img src="img/%D1%80%D0%B0%D0%BA%D0%B5%D1%82%D0%B0.png" alt="Иконка">
+                                СЕО-Оптимизация</button></div>
+                        <div class="col"><button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4"><img src="img/%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BE%D1%84%D0%BE%D0%BD.png" alt="Иконка">
+                                Маркетинг</button></div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                    <div class="card card-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic eveniet modi ullam itaque dicta vero ad nostrum ipsum architecto!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                                    <div class="card card-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil distinctio voluptatem molestias corporis maiores. Inventore.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="collapse multi-collapse" id="multiCollapseExample3">
+                                    <div class="card card-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos soluta voluptatibus, accusamus similique ex, tempore porro voluptates.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="collapse multi-collapse" id="multiCollapseExample4">
+                                    <div class="card card-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus sequi voluptate, dignissimos accusamus fugiat sint, obcaecati eligendi dolore cupiditate amet saepe.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="kejs" id="kejs">
-            <h2>Кейсы</h2>
-            <img class="img1" src="img/cherta.png" alt="cherta">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dolorem recusandae natus nulla accusamus officia laborum inventore animi.</p>
-            <div class="kk">
-                <img src="img/kejs.png" alt="kejs">
-            </div>
-            <div>
-                <div class="ss">
-                    <h3>Client</h3>
-                    <p>Какая-то компания</p>
-                    <br>
-                    <h3>Website:</h3>
-                    <p>http://www.somedomain.com</p>
-                    <input type="button" value="Visit live site">
+            <div class="container-fluid h-100">
+                <div class="row align-items-center w-100">
+                    <div class="text-center">
+                        <h2>Кейсы</h2>
+                    </div>
                 </div>
-                <div class="np">
-                    <h3>Название проекта</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio harum, alias reiciendis ut dolorem odit pariatur minus nemo vero facere ex quia quos repudiandae, quo vitae nihil, numquam consequatur repellat.</p>
+                <div class="row align-items-center w-100">
+                    <div class="text-center"><img class="img1 mx-auto d-block" src="img/cherta.png" alt="cherta"></div>
+                </div>
+                <div class="row align-items-center w-100">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dolorem recusandae natus nulla accusamus officia laborum inventore animi.</p>
+                </div>
+                <div class="row align-items-center w-100">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/kejs.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/kejs.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/kejs.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Предыдущий</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Следующий</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row d-none d-md-block">
+                        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2">
+                            <div class="ss">
+                                <h3>Client</h3>
+                                <p>Какая-то компания</p>
+                                <br>
+                                <h3>Website:</h3>
+                                <p>http://www.somedomain.com</p>
+                                <input type="button" value="Visit live site">
+                            </div>
+                        </div>
+                        <div class="col-xxl-9 offset-xxl-1 col-xl-9 offset-xl-1 col-lg-8 offset-lg-2 col-md-6 offset-md-4">
+                            <div class="np">
+                                <h3>Название проекта</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio harum, alias reiciendis ut dolorem odit pariatur minus nemo vero facere ex quia quos repudiandae, quo vitae nihil, numquam consequatur repellat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex d-md-none">
+                        <div class="col-md-2">
+                            <div class="ss">
+                                <h3>Client</h3>
+                                <p>Какая-то компания</p>
+                                <br>
+                                <h3>Website:</h3>
+                                <p>http://www.somedomain.com</p>
+                                <input type="button" value="Visit live site">
+                            </div>
+                        </div>
+                        <div class="col-md-2 offset-md-4 d-block d-md-none">
+                            <div class="np">
+                                <a class="btn btn-outline-secondary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    Название проекта
+                                </a>
+                            </div>
+                        </div>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio harum, alias reiciendis ut dolorem odit pariatur minus nemo vero facere ex quia quos repudiandae, quo vitae nihil, numquam consequatur repellat.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="calc" id="calc">
-            <h2>Расчет стоимости</h2>
-            <img class="img1" src="img/cherta.png" alt="cherta">
-            <h3>ТИП САЙТА</h3>
-            <select name="sajt_tipe" id="s">
-                <option value="option1">Выберите пункт...</option>
-                <option value="option2">option2</option>
-                <option value="option3">option3</option>
-                <option value="option4">option4</option>
-            </select>
-            <h3>ДИЗАЙН</h3>
-            <select name="dizajn" id="d">
-                <option value="option1">Выберите пункт...</option>
-                <option value="option2">option2</option>
-                <option value="option3">option3</option>
-                <option value="option4">option4</option>
-            </select>
-            <h3>АДАПТИНОСТЬ</h3>
-            <select name="adaption" id="a">
-                <option value="option1">Выберите пункт...</option>
-                <option value="option2">option2</option>
-                <option value="option3">option3</option>
-                <option value="option4">option4</option>
-            </select>
-            <div>
-                <div class="p">
-                    <p>Сроки</p>
-                    <p>Стоимость</p>
-                </div>
-                <div class="k">
-                    <p>0</p>
-                    <p>0</p>
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col">
+                        <form>
+                            <fieldset disabled>
+                                <legend>Расчет стоимости</legend>
+                                <div class="mb-3">
+                                    <label for="disabledSelect" class="form-label">ТИП САЙТА</label>
+                                    <select name="sajt_tipe" id="s">
+                                        <option value="option1">Выберите пункт...</option>
+                                        <option value="option2">option2</option>
+                                        <option value="option3">option3</option>
+                                        <option value="option4">option4</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="disabledSelect" class="form-label">ДИЗАЙН</label>
+                                    <select name="dizajn" id="d">
+                                        <option value="option1">Выберите пункт...</option>
+                                        <option value="option2">option2</option>
+                                        <option value="option3">option3</option>
+                                        <option value="option4">option4</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="disabledSelect" class="form-label">АДАПТИНОСТЬ</label>
+                                    <select name="adaption" id="a">
+                                        <option value="option1">Выберите пункт...</option>
+                                        <option value="option2">option2</option>
+                                        <option value="option3">option3</option>
+                                        <option value="option4">option4</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <div>
+                                        <div class="p">
+                                            <p>Сроки: 0</p>
+                                            <p>Стоимость: 0</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-info">Оставить заявку</button>
+                            </fieldset>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="statistic" id="stat">
-            <h2>НЕМНОГО САТТИСТИКИ</h2>
-            <img class="img1" src="img/cherta.png" alt="cherta">
-            <div>
-                <div class="st">
-                    <img src="img/%D1%81%D0%BC%D0%B0%D0%B9%D0%BB.png" alt="">
-                    <p>0</p>
-                    <h5>СЧАСЛИВЫХ КЛИЕНТОВ</h5>
+            <div class="container h-100 w-100">
+                <div class="row align-items-center w-100">
+                    <div class="text-center">
+                        <h2>НЕМНОГО САТТИСТИКИ</h2>
+                    </div>
                 </div>
-                <div class="st">
-                    <img src="img/%D1%81%D0%BA%D0%BE%D0%B1%D0%BA%D0%B8.png" alt="">
-                    <p>0</p>
-                    <h5>ЧАСОВ РАБОТЫ</h5>
+                <div class="row">
+                    <div class="text-center"><img class="img1 mx-auto d-block" src="img/cherta.png" alt="cherta"></div>
                 </div>
-                <div class="st">
-                    <img src="img/%D0%B3%D0%B0%D0%BB%D0%BE%D1%87%D0%BA%D0%B0.png" alt="">
-                    <p>0</p>
-                    <h5>ПРОЕКТОВ ЗАВЕРШИНО</h5>
-                </div>
-                <div class="st">
-                    <img src="img/%D0%BA%D1%83%D0%B1%D0%BE%D0%BA.png" alt="">
-                    <p>0</p>
-                    <h5>НАГРАД ПОЛУЧЕНО</h5>
+                <div class="row w-100">
+                    <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 ">
+                        <div class="st">
+                            <img src="img/%D1%81%D0%BC%D0%B0%D0%B9%D0%BB.png" alt="">
+                            <p>0</p>
+                            <h5>СЧАСЛИВЫХ КЛИЕНТОВ</h5>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6">
+                        <div class="st">
+                            <img src="img/%D1%81%D0%BA%D0%BE%D0%B1%D0%BA%D0%B8.png" alt="">
+                            <p>0</p>
+                            <h5>ЧАСОВ РАБОТЫ</h5>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6">
+                        <div class="st">
+                            <img src="img/%D0%B3%D0%B0%D0%BB%D0%BE%D1%87%D0%BA%D0%B0.png" alt="">
+                            <p>0</p>
+                            <h5>ПРОЕКТОВ ЗАВЕРШИНО</h5>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6">
+                        <div class="st">
+                            <img src="img/%D0%BA%D1%83%D0%B1%D0%BE%D0%BA.png" alt="">
+                            <p>0</p>
+                            <h5>НАГРАД ПОЛУЧЕНО</h5>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="koment" id="kom">
-            <h2>ОТЗЫВЫ</h2>
-            <img class="img1" src="img/cherta.png" alt="cherta">
-            <div>
-                <img src="img/fotka%20koment.png" alt="foto">
+            <div class="container">
+                <div class="row w-100">
+                    <h2>ОТЗЫВЫ</h2>
+                    <div class="text-center"><img class="img1" src="img/cherta.png" alt="cherta"></div>
+                    <div>
+                        <img src="img/fotka%20koment.png" alt="foto">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, assumenda.</p>
+                    <h3>
+                        <b>Михаил</b>, Ген директор ПАО “Газпром”.
+                    </h3>
+                </div>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, assumenda.</p>
-            <h3>
-                <b>Михаил</b>, Ген директор ПАО “Газпром”.
-            </h3>
         </section>
 
         <section class="kontakt" id="kon">
-            <h2>МОИ КОНТАКТЫ</h2>
-            <img class="img1" src="img/cherta.png" alt="cherta">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, at!</p>
-            <div>
-                <div class="dan">
-                    <a href="#">
-                        <img src="img/%D0%B3%D0%B5%D0%BE.png" alt="maker">
-                        <p>Латвия Юрмала Каугури Райня 73-38</p>
-                    </a>
+            <div class="container h-100">
+                <div class="row align-items-center w-100">
+                    <div class="text-center">
+                        <h2>МОИ КОНТАКТЫ</h2>
+                    </div>
                 </div>
-                <div class="dan">
-                    <a href="#">
-                        <img src="img/%D0%BA%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82.png" alt="email">
-                        <p>sokolovsn41@gmail.com</p>
-                    </a>
+                <div class="row">
+                    <div class="text-center"><img class="img1 mx-auto d-block" src="img/cherta.png" alt="cherta"></div>
                 </div>
-                <div class="dan">
-                    <a href="#">
-                        <img src="img/%D1%82%D1%80%D1%83%D0%B1%D0%B0.png" alt="telefon">
-                        <p>+371 22 025 816</p>
-                    </a>
+                <div class="row align-items-center w-100">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, at!</p>
+                </div>
+                <div class="row">
+                    <div class="dan">
+                        <a href="#">
+                            <img src="img/%D0%B3%D0%B5%D0%BE.png" alt="maker">
+                            <p>Латвия Юрмала Каугури Райня 73-38</p>
+                        </a>
+                    </div>
+                    <div class="dan">
+                        <a href="#">
+                            <img src="img/%D0%BA%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82.png" alt="email">
+                            <p>sokolovsn41@gmail.com</p>
+                        </a>
+                    </div>
+                    <div class="dan">
+                        <a href="#">
+                            <img src="img/%D1%82%D1%80%D1%83%D0%B1%D0%B0.png" alt="telefon">
+                            <p>+371 22 025 816</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="row align-items-center w-100">
+                    <div class="text-center">
+                        <h2>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="text-center"><img class="img1 mx-auto d-block" src="img/cherta.png" alt="cherta"></div>
+                </div>
+                <div class="row">
+                    <form action="">
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text" id="addon-wrapping">@</span>
+                            <input type="text" class="form-control" placeholder="Имя" aria-label="Username" aria-describedby="addon-wrapping">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Почта</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Сообщение</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
                 </div>
             </div>
-
-            <div class="email">
-                <h2>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h2>
-                <img class="img1" src="img/cherta.png" alt="cherta">
-                <form action="">
-                    <input type="text" placeholder="Имя" class="emm1">
-                    <input type="email" placeholder="Email" class="emm2"><br>
-                    <textarea name="massage" id="massage" cols="30" rows="10" placeholder="Сообщение" class="ms"></textarea><br>
-                    <input type="submit" class="but" value="Отправить">
-                </form>
-            </div>
-
         </section>
 
         <section class="map">
             <p>map</p>
         </section>
 
-        <section class="footer">
-            <p>Copyright © 2021 Никита Соколов. Design by Web</p>
+
+        <section class="footer"><div class="container"><div class="row"><p>Copyright © 2021 Никита Соколов. Design by Web</p></div></div>
         </section>
 
     </main>
-    
+
     <script>
         var myVar;
 
@@ -239,7 +489,9 @@
             document.getElementById("myDiv2").style.display = "block";
         }
 
-    </script><!-- взято с https://html5css.ru/howto/howto_css_loader.php -->
+    </script>
+    <!-- взято с https://html5css.ru/howto/howto_css_loader.php -->
+    <script src="js/bootstrap.bundle.min.js"></script>
 
 </body>
 
